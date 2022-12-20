@@ -18,7 +18,7 @@ binaries:
     file: target/wasm32-unknown-unknown/release/substreams_solana_tutorial.wasm
 
 modules:
-  - name: sol_basic_mapper
+  - name: map_basic_sol
     kind: map
     inputs:
       - source: sf.solana.type.v1.Block

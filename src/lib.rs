@@ -6,7 +6,7 @@ use substreams::{log};
 use substreams_solana::pb as solpb;
 
 #[substreams::handlers::map]
-fn sol_basic_mapper(block: solpb::sol::v1::Block) -> Result<basicexample::BasicExampleProtoData, substreams::errors::Error> {
+fn map_basic_sol(block: solpb::sol::v1::Block) -> Result<basicexample::BasicExampleProtoData, substreams::errors::Error> {
     // Extract data from the Solana Block and log to the console.
     // The data available in the Block directly represents the related protobuf.
     // The full data model for a Solona Block is available at the following link.

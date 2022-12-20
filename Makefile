@@ -4,7 +4,7 @@ build:
 
 .PHONY: stream
 stream: build
-	substreams run -e mainnet.sol.streamingfast.io:443 substreams-solana-tutorial.yaml sol_basic_mapper -s 12292922 -t +10
+	substreams run -e mainnet.sol.streamingfast.io:443 substreams-solana-tutorial.yaml map_basic_sol -s 12292922 -t +10
 
 .PHONY: codegen
 codegen:

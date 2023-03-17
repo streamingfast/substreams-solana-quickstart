@@ -1,5 +1,3 @@
-
-Cargo.lock
+*.spkg
 target/
-workspace.code-workspace
 .idea

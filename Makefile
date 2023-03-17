@@ -9,7 +9,7 @@ stream: build
 	substreams run -e $(ENDPOINT) substreams.yaml map_block -s 12292922 -t +10
 
 .PHONY: protogen
-codegen:
+protogen:
 	substreams protogen ./substreams.yaml --exclude-paths="sf/substreams,google"
 
 .PHONY: package

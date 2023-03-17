@@ -4,9 +4,9 @@ build:
 
 .PHONY: stream
 stream: build
-	substreams run -e mainnet.sol.streamingfast.io:443 substreams-solana-tutorial.yaml map_basic_sol -s 12292922 -t +10
+	substreams run -e mainnet.sol.streamingfast.io:443 substreams.yaml map_block -s 12292922 -t +10
 
 .PHONY: codegen
 codegen:
-	substreams protogen ./substreams-solana-tutorial.yaml --exclude-paths="sf/substreams,google"
+	substreams protogen ./substreams.yaml --exclude-paths="sf/substreams,google"
 	

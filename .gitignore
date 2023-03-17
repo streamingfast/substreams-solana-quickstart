@@ -2,3 +2,4 @@
 Cargo.lock
 target/
 workspace.code-workspace
+.idea

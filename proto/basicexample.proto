@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package sol.basicexample.v1;
-
-message BasicExampleProtoData {
-  string blockhash = 1;
-}

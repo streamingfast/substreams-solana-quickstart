@@ -1,9 +1,10 @@
 [package]
-name = "substreams-solana-tutorial"
-version = "0.1.0"
+name = "substreams-solana-quickstart"
+version = "1.0.0"
 edition = "2021"
 
 [lib]
+name = "substreams"
 crate-type = ["cdylib"]
 
 [dependencies]

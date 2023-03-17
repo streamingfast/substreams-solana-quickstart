@@ -6,7 +6,10 @@ build:
 stream: build
 	substreams run -e mainnet.sol.streamingfast.io:443 substreams.yaml map_block -s 12292922 -t +10
 
-.PHONY: codegen
+.PHONY: protogen
 codegen:
 	substreams protogen ./substreams.yaml --exclude-paths="sf/substreams,google"
-	
+
+.PHONY: package
+package:
+	substreams pack ./substreams.yaml

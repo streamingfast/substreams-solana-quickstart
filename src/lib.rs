@@ -1,7 +1,6 @@
 mod pb;
 
 use pb::sf::solana::block_meta::v1::BlockMeta;
-use substreams::Hex;
 use substreams_database_change::pb::database::DatabaseChanges;
 use substreams_database_change::tables::Tables as DatabaseChangeTables;
 use substreams_solana::pb::sol;
